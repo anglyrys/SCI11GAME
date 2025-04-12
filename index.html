@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="card.css"/>
+    <title>Flip&Match</title>
+</head>
+<body>
+    <h1>Flip & Match SCIENCE11 Game</h1>
+
+    <fieldset> <strong>Instruction:</strong> Match the pairs of cards to uncover fascinating study discoveries! Each matching pair reveals a fact, finding, or concept that led to an important scientific or academic insight.
+    </fieldset>
+
+    <div id="gameboard">
+        <div class="card" data-card="1">
+            <div class="GOOGLE front"></div>
+            <div class="back-pattern"></div>
+        </div>
+        <div class="card" data-card="1">
+            <div class="GOOGLE front"></div>
+            <div class="back-pattern"></div>
+        </div>
+
+        <div class="card" data-card="2">
+            <div class="AI-MACHINE front"></div>
+            <div class="back-pattern"></div> 
+        </div>
+        <div class="card" data-card="2">
+            <div class="AI-MACHINE front"></div>
+            <div class="back-pattern"></div>
+        </div>
+
+        <div class="card" data-card="3">
+            <div class="NEURO front"></div>
+            <div class="back-pattern"></div>
+        </div>
+        <div class="card" data-card="3">
+            <div class="NEURO front"></div>
+            <div class="back-pattern"></div>
+        </div>
+
+        <div class="card" data-card="4">
+            <div class="MUSIC front"></div>
+            <div class="back-pattern"></div>
+        </div>
+        <div class="card" data-card="4">
+            <div class="MUSIC front"></div>
+            <div class="back-pattern"></div>
+        </div>
+    </div>
+
+<button id="firstclick" style="display: none;">CLICK ME!</button>
+<div id="trivia1" style="display: none;">
+    <p id="triviatext" style="display: none;">
+    <strong>Do You Know?</strong><br><br>
+     It was discovered that the <strong>human brain</strong> can recognize and classify music genres in different specific areas of the cortical surface of the brain. The study also remarked that the human brain naturally categorizes music by genre (Tomoya et al., 2020). This is one of the studies that lays the groundwork for the discovery study: <strong>Brain2Music: Reconstructing music from brain activity.</strong> The study was a collaboration with <strong>Google AI,</strong> which uses an AI model for generating music from brain activity.
+    </p>
+</div>
+
+<!--2ND GAMEBOARD -->
+
+
+<div id="gameboard2">
+    <div class="card2" data-card="a">
+        <div class="inner"><img src="fmri scan (2).png"/></div>
+        <div class="outer"></div>
+    </div>
+
+    <div class="card2" data-card="a">
+        <div class="inner"><img src="fmri scan (2).png"/></div>
+        <div class="outer"></div>
+    </div>
+
+    <div class="card2" data-card="b">
+        <div class="inner"><img src="auditory cortex (1).png"/></div>
+        <div class="outer"></div>
+    </div>
+
+    <div class="card2" data-card="b">
+        <div class="inner"><img src="auditory cortex (1).png"/></div>
+        <div class="outer"></div>
+    </div>
+
+    <div class="card2" data-card="c">
+        <div class="inner"><img src="prefrontal cortex (1).png"/></div>
+        <div class="outer"></div>
+    </div>
+
+    <div class="card2" data-card="c">
+        <div class="inner"><img src="prefrontal cortex (1).png"/></div>
+        <div class="outer"></div>
+    </div>
+</div>
+
+<button id="secondclick" style="display: none;">CLICK ME!</button>
+<div id="trivia2" style="display: none;">
+    <p id="triviatext2" style="display: none;">
+        <strong>How does the human brain represent music?</strong><br><br>
+With the help of <strong>Functional Magnetic Resonance Imaging (fMRI)</strong> scans and music embedding models like <strong>MuLan and w2v-BERT,</strong> researchers can now visualize brain activity and predict or analyze the music that the brain is processing. They collect brain data from subjects who listen to 15-second music clips while undergoing fMRI scanning. The results show which brain regions respond to music characteristics like pitch, tempo, and genre. The music embedding models help track which parts of the brain process these features. Two brain regions significantly respond to the music embedding models:<br><br>
+<strong>Prefrontal Cortex:</strong> This part of the brain is involved in executive functions related to attention, information processing, and mood. It also responds to music embedding models, especially MuLan, because it deals with complex, high-level thinking. To surmise, MuLan is a high-level embedding because it captures abstract information like mood, genre, and instrumentation, which the prefrontal cortex also processes.<br><br>
+<strong>Auditory Cortex:</strong> Although the auditory cortex comprises several regions, the study specifically focused on the primary auditory cortex, though not exclusively. This brain region primarily processes sound frequencies and patterns related to speech, music, and environmental sounds. As a result, it responds to both MuLan and w2v-BERT. MuLan is considered a high-level embedding, while w2v-BERT is a low-level embedding because it emphasizes sound patterns and vocals, rather than genre or mood. Therefore, the auditory cortex can respond to both models, as it processes both the sound itself and the context or emotional quality of the music. This ability is due to the auditory cortex's extensive reach across the brain, highlighting its versatility in processing different types of information.
+
+    </p>
+</div>
+
+<!--3RD GAMEBOARD-->
+
+
+<div id="gameboard3">
+    <div class="card3"  data-card="q">
+        <div class="inside"><img src="Mmusic.png"/></div>
+        <div class="back"></div>
+    </div>
+    <div class="card3"  data-card="q">
+        <div class="inside"><img src="Mmusic.png"/></div>
+        <div class="back"></div>
+    </div>
+
+    <div class="card3"  data-card="w">
+        <div class="inside"><img src="mtext.png"/></div>
+        <div class="back"></div>
+    </div>
+    <div class="card3"  data-card="w">
+        <div class="inside"><img src="mtext.png"/></div>
+        <div class="back"></div>
+    </div>
+
+    <div class="card3" data-card="e">
+        <div class="inside"><img src="fmridata.png"/></div>
+        <div class="back"></div>
+    </div>
+    <div class="card3" data-card="e">
+        <div class="inside"><img src="fmridata.png"/></div>
+        <div class="back"></div>
+    </div>
+</div>
+
+<button id="thirdclick" style="display: none;">CLICK ME!</button>
+
+<div id="trivia3" style="display: none;">
+  <p id="triviatext3" style="display: none;">
+    <strong>How is music reconstructed from the brain?</strong><br><br>
+    As mentioned earlier, <strong>MuLan</strong>,specifically <strong>MuLanMusic</strong>,captures information about the complexity of music, while <strong>MuLanText</strong> is more similar to <strong>w2v-BERT</strong>, as it focuses on the literal text or lyrics of the music. This music embedding model, developed by Google, is used for reconstructing or generating music from brain activity.<br>
+    To reconstruct or generate music from the brain, <strong>fMRI data</strong> must first be collected and analyzed using music embedding models (<strong>MuLanMusic</strong> and <strong>MuLanText</strong>). These models help identify the type of music the subject is processing by matching the brain activity to millions of stored music embeddings. Based on this match, the system can then reconstruct the music, effectively generating sound from brain activity.
+  </p>
+</div>
+
+<fieldset class="container" style="display: none;">
+
+    <div class="process" style="display: none;">
+    <img src="process.png" class="model"/>
+    </div>
+
+    <p class="content" style="display: none;"><i>This image is a visual representation of the process of reconstructing music from brain activity.</i><br><br>
+        The process begins with a <strong>music stimulus</strong>, the subject listens to a short piece of music while undergoing an fMRI scan. The fMRI captures the brain’s response to the music in real time, specifically identifying patterns of neural activity in various brain regions.
+        <br><br>Next, linear regression is applied to the <strong>fMRI data</strong> to map this brain activity onto a <strong>music embedding space.</strong> Music embeddings are representations of different musical features (such as rhythm, melody, mood, and genre) in a machine-understandable format. This step translates complex brain signals into structured data that can be processed computationally.
+        <br><br>Then, <strong>MusicLM,</strong> a music generation system developed by Google, is used to interpret these embeddings. MusicLM identifies the characteristics of the music that the brain was processing and uses this information to <strong>reconstruct the music.</strong>
+        <br><br>In summary, the system takes fMRI data of a person listening to music, transforms the brain activity into embeddings via linear regression, and feeds this into MusicLM to generate an audio output that resembles the original music stimulus.
+        
+    </p>
+
+</fieldset>
+
+
+<script src="script.js"></script>
+</body>        
+</html>
+

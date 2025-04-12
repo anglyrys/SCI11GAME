@@ -1,0 +1,372 @@
+
+body { 
+    text-align: center;
+    background: linear-gradient(pink, aquamarine, pink);
+    background-size: cover;
+    
+    
+}
+
+h1 {
+    margin-top: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+fieldset { 
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    border-color: black;
+    border-radius: 10px;
+    background-color: beige;
+    text-align: left;
+    padding: 30px;
+ 
+}
+
+#gameboard { 
+    height: 410px;
+    width: 530px;
+    padding: 10px;
+    background-color: darkkhaki;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 5px;
+    box-sizing: border-box;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    border: 5px ridge darkolivegreen;
+}
+
+
+.card {
+    height: 180px;
+    width: 120px;
+    perspective: 1000px; /* 3D EFFECT */
+    position: relative;
+    
+}
+
+.card .front, .card .back-pattern {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+}
+
+/* Ensure back is the default visible side */
+.card .back-pattern {
+    transform: rotateY(0deg);
+}
+
+/* Ensure front is hidden initially */
+.card .front {
+    transform: rotateY(180deg);
+}
+
+/* Flipping effect when .flipped class is added */
+.card.flipped .front {
+    transform: rotateY(0deg);
+}
+
+.card.flipped .back-pattern {
+    transform: rotateY(-180deg);
+}
+
+.back-pattern {
+    background-image: url(pattern.png);
+    background-size: cover;
+    width: 120px;
+    height: 180px;
+    cursor: pointer;
+}
+
+
+.GOOGLE {
+    background-image: url(google.png);
+    background-size: cover;
+    width: 120px;
+    height: 180px;
+    
+}
+
+.AI-MACHINE {
+    background-image: url(AI.png);
+    background-size: cover;
+    width: 120px;
+    height: 180px;
+    
+}
+
+.NEURO {
+    background-image: url(neuro.png);
+    background-size: cover;
+    width: 120px;
+    height: 180px;
+}
+
+.MUSIC {
+    background-image: url(music1.png);
+    background-size: cover;
+    width: 120px;
+    height: 180px;
+}
+
+#trivia1 {
+    height: 160px;
+    width: 850px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    background-color: wheat;
+    border: 5px double green;
+    text-align: left;
+
+}
+
+#firstclick {
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    align-items: center;
+    justify-content: center;
+    background-color: olivedrab;
+    border-radius: 10px;
+    padding: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#firstclick:hover {
+    cursor: pointer;
+    background-color: olivedrab;
+    opacity: 0.7;
+    color: white;
+}
+
+
+/* 2nd gameboard */
+
+#gameboard2 {
+    height: 410px;
+    width: 410px;
+    padding: 10px;
+    background-color: darkkhaki;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2px;
+    box-sizing: border-box;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    border: 5px ridge darkolivegreen;
+}
+
+.outer {
+    background-image: url(pattern.png);
+    background-size: cover;
+    width: 120px;
+    height: 180px;
+    cursor: pointer;
+}
+
+.card2 {
+    height: 180px;
+    width: 120px;
+    perspective: 1000px; /* 3D EFFECT */
+    position: relative;
+}
+
+.card2 .inner, .card2 .outer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+}
+
+
+.card2 .outer {
+    transform: rotateY(0deg);
+}
+
+
+.card2 .inner {
+    transform: rotateY(180deg);
+}
+
+
+.card2.flipped .inner {
+    transform: rotateY(0deg);
+}
+
+.card2.flipped .outer {
+    transform: rotateY(-180deg);
+}
+
+#secondclick {
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    align-items: center;
+    justify-content: center;
+    background-color: olivedrab;
+    border-radius: 10px;
+    padding: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#secondclick:hover {
+    cursor: pointer;
+    background-color: olivedrab;
+    opacity: 0.7;
+    color: white;
+}
+
+#trivia2 {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    background-color: wheat;
+    border: 5px double green;
+    text-align: left;
+
+}
+
+
+/* 3RD GAMEBOARD */
+
+#gameboard3 { 
+    height: 410px;
+    width: 410px;
+    padding: 10px;
+    background-color: darkkhaki;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 5px;
+    box-sizing: border-box;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    border: 5px ridge darkolivegreen;
+}
+
+.back {
+    background-image: url(pattern.png);
+    background-size: cover;
+    width: 120px;
+    height: 180px;
+    cursor: pointer;
+}
+
+.card3 {
+    height: 180px;
+    width: 120px;
+    perspective: 1000px; /* 3D EFFECT */
+    position: relative;
+}
+
+.card3 .inside, .card3 .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+}
+
+
+.card3 .back {
+    transform: rotateY(0deg);
+}
+
+
+.card3 .inside {
+    transform: rotateY(180deg);
+}
+
+
+.card3.flipped .inside {
+    transform: rotateY(0deg);
+}
+
+.card3.flipped .back {
+    transform: rotateY(-180deg);
+}
+
+#thirdclick {
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    align-items: center;
+    justify-content: center;
+    background-color: olivedrab;
+    border-radius: 10px;
+    padding: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#thirdclick:hover {
+    cursor: pointer;
+    background-color: olivedrab;
+    opacity: 0.7;
+    color: white;
+}
+
+#trivia3 {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    background-color: wheat;
+    border: 5px double green;
+    text-align: left;
+    
+
+}
+
+.process {
+    height: 150px;
+    width: 500px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.container {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-color: black;
+    border-radius: 10px;
+    background-color: beige;
+    text-align: left;
+    padding: 30px;
+}
+
+.model {
+    height: 150px;
+    width: 550px;
+    text-align: center;
+    justify-content: center;
+    margin: auto 0;
+    
+    
+}
